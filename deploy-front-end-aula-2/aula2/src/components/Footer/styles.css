@@ -1,0 +1,21 @@
+/* src\components\Footer\styles.css */
+.footer {
+  margin-top: auto;
+  background: #111827;
+  color: #e5e7eb;
+}
+
+.footer__wrap {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 24px 0 32px;
+  display: grid;
+  gap: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.copy {
+  opacity: .7;
+  font-size: 13px;
+}
