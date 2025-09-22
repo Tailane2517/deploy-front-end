@@ -1,0 +1,100 @@
+/* src/pages/FaleConosco/styles.css */
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: #2d2d2d;
+}
+
+section.contato {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2.5rem;
+  background: #fffdf9;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+section.contato h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2e4634;
+  margin-bottom: 0.5rem;
+}
+
+section.contato p {
+  font-size: 1.1rem;
+  color: #6b6b6b;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.grid.cols-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.field span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #3f5746;
+}
+
+.field input,
+.field textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.75rem;
+  background: #fff;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: #8fbf9f;
+  box-shadow: 0 0 0 3px rgba(143,191,159,0.25);
+}
+
+button.brn.primary {
+  align-self: flex-start;
+  background: #2e4634;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.brn.primary:hover {
+  background: #3c6049;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  section.contato {
+    padding: 1.5rem;
+  }
+  
+  section.contato h1 {
+    font-size: 1.6rem;
+  }
+}
